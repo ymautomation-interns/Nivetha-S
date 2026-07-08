@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+.login-page{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    overflow:hidden;
+    position:relative;
+}
+
+/* Floating circles */
+
+.login-page::before{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:rgba(255,255,255,.18);
+    top:-80px;
+    left:-80px;
+}
+
+.login-page::after{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    background:rgba(255,255,255,.15);
+    bottom:-60px;
+    right:-60px;
+}
+
+.glass-card{
+
+    width:390px;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.3);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:0 8px 32px rgba(0,0,0,.2);
+
+    text-align:center;
+
+    z-index:100;
+}
+
+.logo{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.2);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:35px;
+
+    margin-bottom:20px;
+}
+
+.glass-card h2{
+
+    color:white;
+
+    font-weight:700;
+}
+
+.glass-card p{
+
+    color:#eef;
+
+    margin:10px 0 25px;
+}
+
+.role-switch{
+
+    display:flex;
+
+    background:rgba(255,255,255,.15);
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    margin-bottom:20px;
+}
+
+.role-switch button{
+
+    flex:1;
+
+    border:none;
+
+    padding:12px;
+
+    background:transparent;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.role-switch button.active{
+
+    background:white;
+
+    color:#2563eb;
+
+    font-weight:600;
+}
+
+.glass-card input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.2);
+
+    color:white;
+
+    margin-bottom:20px;
+}
+
+.glass-card input::placeholder{
+
+    color:#f3f3f3;
+}
+
+.login-btn{
+
+    width:100%;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:white;
+
+    color:#2563eb;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.login-btn:hover{
+
+    transform:translateY(-2px);
+
+    background:#f8f8f8;
+}
+
+.message{
+
+    margin-top:18px;
+
+    color:white;
+
+    font-weight:600;
+}
