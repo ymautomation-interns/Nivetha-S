@@ -1,0 +1,333 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f6f7f9;
+    color:#374151;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:35px auto;
+}
+
+/* ---------------- Header ---------------- */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:38px;
+    color:#334155;
+    font-weight:600;
+}
+
+.header p{
+    margin-top:6px;
+    color:#7b8794;
+    font-size:16px;
+}
+
+.student-count{
+    width:150px;
+    background:#ffffff;
+    border:1px solid #dde3ea;
+    border-radius:12px;
+    padding:18px;
+    text-align:center;
+}
+
+.student-count h2{
+    color:#4f6d7a;
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.student-count span{
+    color:#7b8794;
+    font-size:14px;
+}
+
+/* ---------------- Search ---------------- */
+
+.search-box{
+    margin-bottom:20px;
+}
+
+.search-box input{
+    width:100%;
+    padding:14px;
+    border:1px solid #d8dee6;
+    border-radius:10px;
+    outline:none;
+    background:#ffffff;
+    color:#374151;
+    font-size:15px;
+}
+
+.search-box input::placeholder{
+    color:#8b97a8;
+}
+
+/* ---------------- Form ---------------- */
+
+.form-container{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.form-container input{
+    flex:1;
+    padding:14px;
+    border:1px solid #d6e6dd;
+    border-radius:10px;
+    outline:none;
+    background:#edf6f1;
+    color:#374151;
+    font-size:15px;
+    transition:.3s;
+}
+
+.form-container input::placeholder{
+    color:#7b8794;
+}
+
+.form-container input:focus{
+    background:#f8fcf9;
+    border-color:#7b9e89;
+}
+
+/* ---------------- Buttons ---------------- */
+
+.add-btn,
+.update-btn{
+    background:#7b9e89;
+    color:white;
+    border:none;
+    padding:14px 24px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.add-btn:hover,
+.update-btn:hover{
+    background:#678674;
+}
+
+/* ---------------- Student Cards ---------------- */
+
+.student-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(370px,1fr));
+    gap:22px;
+}
+
+.student-card{
+    background:white;
+    border:1px solid #dde3ea;
+    border-radius:14px;
+    padding:22px;
+    transition:.25s;
+}
+
+.student-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card-header{
+    border-bottom:1px solid #ececec;
+    padding-bottom:15px;
+    margin-bottom:18px;
+}
+
+.card-header h3{
+    font-size:24px;
+    color:#334155;
+    font-weight:600;
+}
+
+.details-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    margin-bottom:20px;
+}
+
+.detail-box{
+    background:#edf6f1;
+    border:1px solid #d6e6dd;
+    border-radius:10px;
+    padding:18px;
+    text-align:center;
+}
+
+.detail-box span{
+    color:#6b7d73;
+    font-size:13px;
+}
+
+.detail-box h4{
+    margin-top:8px;
+    color:#4f5f58;
+    font-size:18px;
+}
+
+/* ---------------- Card Buttons ---------------- */
+
+.card-buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+}
+
+.edit-btn,
+.delete-btn{
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+    transition:.3s;
+}
+
+.edit-btn{
+    background:#dbe7df;
+    color:#3b5d50;
+}
+
+.edit-btn:hover{
+    background:#cfded4;
+}
+
+.delete-btn{
+    background:#efe6e1;
+    color:#8b5e3c;
+}
+
+.delete-btn:hover{
+    background:#e6d7cf;
+}
+
+/* ---------------- Toast ---------------- */
+
+.toast{
+    position:fixed;
+    top:25px;
+    right:25px;
+    z-index:10000;
+    padding:15px 22px;
+    border-radius:10px;
+    color:white;
+    font-weight:600;
+    animation:slide .3s ease;
+}
+
+.success{
+    background:#6f9f78;
+}
+
+.error{
+    background:#c97c5d;
+}
+
+@keyframes slide{
+    from{
+        opacity:0;
+        transform:translateX(100px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* ---------------- Delete Confirmation ---------------- */
+
+.modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.10);
+    display:flex;
+    justify-content:flex-end;
+    align-items:flex-start;
+    padding:25px;
+    z-index:99999;
+}
+
+.modal-box{
+    width:330px;
+    background:#ffffff;
+    border:1px solid #dde3ea;
+    border-radius:14px;
+    padding:22px;
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+    animation:popup .25s ease;
+}
+
+.modal-box h3{
+    color:#334155;
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.modal-box p{
+    color:#6b7280;
+    margin-bottom:22px;
+    line-height:1.5;
+}
+
+.modal-buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+}
+
+.cancel-btn,
+.confirm-btn{
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cancel-btn{
+    background:#edf2f4;
+    color:#475569;
+}
+
+.cancel-btn:hover{
+    background:#dde5ea;
+}
+
+.confirm-btn{
+    background:#d9b8a3;
+    color:white;
+}
+
+.confirm-btn:hover{
+    background:#cfa38b;
+}
+
+@keyframes popup{
+    from{
+        opacity:0;
+        transform:translateX(120px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
