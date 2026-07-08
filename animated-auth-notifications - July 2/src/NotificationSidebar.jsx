@@ -8,7 +8,7 @@ const NotificationSidebar = ({ addNotification }) => {
   const patientNotifications = {
     accept: {
       title: "Appointment Accepted",
-      description: "Rahul Kumar's cardiology appointment has been accepted by Dr. Priya Sharma."
+      description: "Rahul's  cardiology appointment has been accepted by Dr. Priya Sharma."
     },
     complete: {
       title: "Treatment Completed",
