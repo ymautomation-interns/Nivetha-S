@@ -1,0 +1,72 @@
+.status-container {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.status-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.status-card {
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #667eea;
+}
+
+.status-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.status-card p {
+  margin-bottom: 10px;
+  color: #666;
+  font-size: 13px;
+}
+
+.active-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 15px;
+  background-color: #28a745;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.inactive-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 15px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+}
+
+
+.active-badge {
+
+    background-color: green;
+
+}
+
+
+.inactive-badge {
+
+    background-color: red;
+
+}
