@@ -1,0 +1,39 @@
+.memo-container{
+    padding:20px;
+}
+
+.memo-container h1{
+    margin-bottom:20px;
+    color:#1e293b;
+}
+
+.memo-input{
+    width:350px;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    margin-bottom:20px;
+    font-size:16px;
+}
+
+.memo-table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+.memo-table th{
+    background:#2563eb;
+    color:white;
+    padding:14px;
+}
+
+.memo-table td{
+    padding:12px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.memo-table tr:hover{
+    background:#f8fafc;
+}

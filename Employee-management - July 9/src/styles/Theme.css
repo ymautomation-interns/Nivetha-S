@@ -1,0 +1,44 @@
+.theme-container{
+    max-width:700px;
+    margin:auto;
+    padding:40px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.light{
+    background:#ffffff;
+    color:#1e293b;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.dark{
+    background:#1e293b;
+    color:#ffffff;
+    box-shadow:0 4px 12px rgba(0,0,0,.3);
+}
+
+/* Make all text inherit the theme color */
+.theme-container h1,
+.theme-container h2,
+.theme-container p{
+    color:inherit;
+}
+
+.theme-container h1{
+    margin-bottom:20px;
+}
+
+.theme-container h2{
+    margin-bottom:20px;
+}
+
+.theme-container p{
+    margin-bottom:25px;
+    font-size:18px;
+}
+
+.theme-container button{
+    padding:12px 22px;
+}

@@ -1,0 +1,32 @@
+.local-container{
+    max-width:600px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.local-container h1{
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+.local-container input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    margin-bottom:20px;
+    font-size:16px;
+}
+
+.local-container h2{
+    margin-bottom:10px;
+    color:#1e293b;
+}
+
+.local-container p{
+    color:#64748b;
+}

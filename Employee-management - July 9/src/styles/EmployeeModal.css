@@ -1,0 +1,41 @@
+.modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+}
+
+.modal-container{
+
+    width:550px;
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+
+    animation:popup .25s ease;
+
+}
+
+@keyframes popup{
+
+    from{
+        transform:scale(.9);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
