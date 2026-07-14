@@ -1,0 +1,75 @@
+.estimate-status{
+    width:100%;
+}
+
+.estimate-status h3{
+    margin-bottom:20px;
+    text-align:center;
+    color:#1d4ed8;
+}
+
+.gauge-wrapper{
+    position:relative;
+    height:250px;
+    margin-top:10px;
+}
+
+.gauge-center{
+    position:absolute;
+    left:50%;
+    top:70%;          /* Changed from 48% to 54% */
+    transform:translate(-50%,-50%);
+}
+
+.gauge-center h1{
+    font-size:34px;
+    color:#333;
+    margin:0;
+    font-weight:600;
+}
+
+.estimate-footer{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+    margin-top:-5px;
+}
+
+.estimate-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.estimate-title{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.square{
+    width:12px;
+    height:12px;
+    border-radius:2px;
+}
+
+.green{
+    background:#4CAF50;
+}
+
+.orange{
+    background:#F97316;
+}
+
+.label{
+    font-size:15px;
+    font-weight:600;
+    color:#444;
+}
+
+.estimate-number{
+    margin-top:6px;
+    font-size:24px;
+    font-weight:700;
+    color:#555;
+}
