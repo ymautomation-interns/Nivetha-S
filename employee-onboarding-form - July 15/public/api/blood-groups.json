@@ -1,0 +1,10 @@
+[
+  { "type": "A+" },
+  { "type": "A-" },
+  { "type": "B+" },
+  { "type": "B-" },
+  { "type": "AB+" },
+  { "type": "AB-" },
+  { "type": "O+" },
+  { "type": "O-" }
+]
