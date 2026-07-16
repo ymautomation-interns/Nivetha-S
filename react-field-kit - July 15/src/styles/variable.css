@@ -1,0 +1,61 @@
+/* src/styles/variable.css
+ * Design tokens for the field kit + date-range calendar.
+ * Mirrors the palette already defined in index.css (--accent, --text,
+ * --border, --bg) so every field, old and new, feels like one system. */
+
+:root {
+  /* ---- field-kit tokens ---- */
+  --field-border: #d9d9d9;
+  --field-border-hover: #b9b9b9;
+  --field-border-focus: var(--accent, #aa3bff);
+  --field-focus-ring: var(--accent-bg, rgba(170, 59, 255, 0.12));
+  --field-bg: #ffffff;
+  --field-bg-disabled: #f5f5f5;
+  --field-text: #1f1f1f;
+  --field-label: #333333;
+  --field-helper: #888888;
+  --field-error: #d32f2f;
+  --field-error-bg: rgba(211, 47, 47, 0.05);
+  --field-radius: 8px;
+  --field-gap: 18px;
+
+  /* ---- date-range calendar tokens ("Reservation Desk" theme:
+     cream paper, deep emerald ink, brass hardware) ---- */
+  --rd-ink-950: #0b211c;
+  --rd-ink-800: #123830;
+  --rd-ink-700: #1a4a3f;
+
+  --rd-paper: #fbf6ea;
+  --rd-paper-dim: #f1e8d3;
+  --rd-paper-line: #e7dcc0;
+
+  --rd-emerald: #1f6f5c;
+  --rd-emerald-deep: #0e4a3c;
+  --rd-emerald-tint: #e3efe9;
+  --rd-brass: #c89b5c;
+  --rd-brass-dark: #a97f45;
+  --rd-brass-tint: #f4e9d6;
+
+  --rd-text: #1c2b27;
+  --rd-muted: #74857f;
+  --rd-on-emerald: #fbf6ea;
+
+  --rd-font-display: "Fraunces", "Iowan Old Style", ui-serif, serif;
+  --rd-font-body: "Manrope", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --rd-font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --rd-shadow-card: 0 24px 48px rgba(11, 33, 28, 0.28), 0 4px 14px rgba(11, 33, 28, 0.14);
+  --rd-shadow-soft: 0 10px 24px rgba(11, 33, 28, 0.14);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --field-border: #3a3b42;
+    --field-border-hover: #4a4b54;
+    --field-bg: #1c1d24;
+    --field-bg-disabled: #23242c;
+    --field-text: #f3f4f6;
+    --field-label: #f3f4f6;
+    --field-helper: #9ca3af;
+  }
+}

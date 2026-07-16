@@ -1,0 +1,59 @@
+/* src/styles/global.css — Playground page layout */
+
+.playground {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+  box-sizing: border-box;
+}
+
+.playground__eyebrow {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 6px;
+}
+
+.playground__title {
+  text-align: left;
+  margin: 0 0 8px;
+}
+
+.playground__subtitle {
+  text-align: left;
+  font-size: 14.5px;
+  line-height: 150%;
+  color: var(--text);
+  margin: 0 0 30px;
+  max-width: 440px;
+}
+
+.playground__card {
+  background: var(--field-bg);
+  border: 1px solid var(--field-border);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.playground__section {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--field-helper);
+  margin: 0 0 16px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--field-border);
+}
+
+.playground__section:first-child {
+  padding-top: 0;
+  border-top: none;
+}

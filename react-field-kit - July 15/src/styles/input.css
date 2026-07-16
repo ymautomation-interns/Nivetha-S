@@ -1,0 +1,181 @@
+/* src/styles/input.css
+ * Shared visual language for every FieldKit field. */
+
+.fk-field {
+  margin-bottom: var(--field-gap);
+  text-align: left;
+}
+
+.fk-field__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 7px;
+}
+
+.fk-label {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--field-label);
+}
+
+.fk-label--inline {
+  margin-bottom: 0;
+}
+
+.fk-label .fk-required {
+  color: var(--field-error);
+  margin-left: 2px;
+}
+
+.fk-counter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--field-helper);
+  white-space: nowrap;
+}
+
+.fk-counter-toggle input {
+  width: 56px;
+  padding: 4px 7px;
+  font-size: 11.5px;
+  font-family: inherit;
+  color: var(--field-text);
+  background: var(--field-bg);
+  border: 1.3px solid var(--field-border);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.fk-counter-toggle input:focus {
+  border-color: var(--field-border-focus);
+}
+
+.fk-input,
+.fk-textarea {
+  width: 100%;
+  padding: 10px 13px;
+  font: inherit;
+  font-size: 14.5px;
+  color: var(--field-text);
+  background: var(--field-bg);
+  border: 1.5px solid var(--field-border);
+  border-radius: var(--field-radius);
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.fk-textarea {
+  resize: vertical;
+  min-height: 92px;
+  line-height: 1.5;
+}
+
+.fk-input:hover,
+.fk-textarea:hover {
+  border-color: var(--field-border-hover);
+}
+
+.fk-input:focus,
+.fk-textarea:focus {
+  border-color: var(--field-border-focus);
+  box-shadow: 0 0 0 4px var(--field-focus-ring);
+}
+
+.fk-input:disabled,
+.fk-textarea:disabled {
+  background: var(--field-bg-disabled);
+  color: var(--field-helper);
+  cursor: not-allowed;
+}
+
+.fk-input--error,
+.fk-textarea--error {
+  border-color: var(--field-error);
+  background: var(--field-error-bg);
+}
+
+.fk-input--error:focus,
+.fk-textarea--error:focus {
+  box-shadow: 0 0 0 4px rgba(211, 47, 47, 0.12);
+}
+
+.fk-helper {
+  display: block;
+  margin-top: 6px;
+  font-size: 12.5px;
+  color: var(--field-helper);
+}
+
+.fk-error {
+  display: block;
+  margin-top: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--field-error);
+}
+
+.fk-counter {
+  text-align: right;
+  margin-top: 5px;
+  font-size: 11.5px;
+  font-family: var(--mono, monospace);
+  color: var(--field-helper);
+}
+
+.fk-counter--limit {
+  color: var(--field-error);
+  font-weight: 600;
+}
+
+/* remark / read-only display */
+.fk-remark {
+  padding: 10px 13px;
+  background: var(--field-bg-disabled);
+  border: 1px solid var(--field-border);
+  border-radius: var(--field-radius);
+  font-size: 14.5px;
+  color: var(--field-text);
+  min-height: 20px;
+}
+
+.fk-remark--empty {
+  color: var(--field-helper);
+}
+
+/* number field with a length-match tick mark */
+.fk-input-wrap {
+  position: relative;
+}
+
+.fk-input--with-tick {
+  padding-right: 38px;
+}
+
+.fk-input-tick {
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  transform: translateY(-50%);
+  color: #1fa96b;
+  pointer-events: none;
+  animation: fkTickIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fkTickIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
+}
