@@ -61,8 +61,21 @@
     display:flex;
     justify-content:flex-end;
     align-items:center;
-    gap:12px;
     flex-wrap:wrap;
+}
+
+.selected-users .tooltip-container{
+    margin-left:-18px;
+    position:relative;
+    z-index:1;
+}
+
+.selected-users .tooltip-container:first-child{
+    margin-left:0;
+}
+
+.selected-users .tooltip-container:hover{
+    z-index:5;
 }
 
 .avatar{
@@ -73,9 +86,10 @@
     border:3px solid white;
     box-shadow:0 3px 10px rgba(0,0,0,.15);
     transition:.3s;
+    display:block;
 }
 
-.avatar:hover{
+.selected-users .tooltip-container:hover .avatar{
     transform:scale(1.08);
 }
 
